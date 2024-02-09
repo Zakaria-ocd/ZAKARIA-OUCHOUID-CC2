@@ -1,0 +1,142 @@
+/* EXERCICE1 */
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: red;
+}
+article > h2 {
+  color: green;
+}
+h2 ~ p {
+  color: blue;
+  font-style: italic;
+}
+h1:first-of-type {
+  text-shadow: 10px 10px 10px gray;
+}
+img:first-of-type + img {
+  border-radius: 20%;
+}
+/* EXERCICE2 */
+.div1 {
+  height: 280px;
+  width: 280px;
+  background-color: blue;
+  transition: all 1s;
+}
+.div1:hover {
+  transform: translate(300px, 300px) rotate(35deg);
+}
+@media (max-width: 1150px){
+  .div1 {
+    background-color: green;
+  }
+}
+@media (max-width: 670px) {
+  .div1 {
+    background-color: red;
+  }
+}
+
+/* EXERCICE3 */
+header {
+  display: flex;
+  flex-direction: column;
+}
+.ul-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ul-input ul {
+  display: flex;
+  align-items: center;
+}
+.ul-input li {
+  list-style: none;
+  margin-right: 2vw;
+}
+.ul-input li a {
+  text-decoration: none;
+  color: rgb(22, 144, 22);
+}
+.ul-input {
+  background-color: gold;
+  margin-top: -21px;
+}
+.ul-input li:active,
+.ul-input li:hover {
+  background-color: brown;
+  height: 30px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.ul-input button {
+  background-color: RED;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  height: 22px;
+  margin-right: 3vw;
+  cursor: pointer;
+}
+header h1 {
+  color: white;
+  text-align: start;
+  background-color: aqua;
+  height: 100px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px aqua;
+  padding-left: 3vw;
+}
+/* EXERCICE4*/
+.divex4 {
+  width: 70%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.divex4 div div {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  border-radius: 10%;
+}
+.dive1 {
+  display: flex;
+  justify-content: space-between;
+  height: 80%;
+}
+.dive1i {
+  align-self: center;
+  margin-top: 80px;
+}
+.dive2 {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+/*EXERCICE5 */
+#boite {
+  background-color: red;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  animation-name: redBox;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+@keyframes redBox {
+  0% {
+    left: 10px;
+  }
+  50% {
+    left: 400px;
+  }
+  100% {
+    left: 10px;
+  }
+}
